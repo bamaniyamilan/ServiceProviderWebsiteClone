@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import TopBar from './components/TopBar';
+import Navbar from './components/Navbar';
+import ImageSlider from './components/ImageSlider';
+import LogoCarousel from './components/LogoCarousel';
+import OurObjective from './components/OurObjective';
+import HowCanWeHelp from './components/HowCanWeHelp';
+import ServiceNow from './components/ServiceNow';
+import OurSpecialities from './components/OurSpecialities';
+import InnovateSection from './components/InnovateSection';
+import Testimonial from './components/Testimonial';
+import OurLatestInsights from './components/OurLatestInsights';
+import RequestQuoteSection from './components/RequestQuoteSection';
+import ParallaxSection from './components/ParallaxSection';
+import Footer from './components/Footer';
+import BackToTopButton from './components/BackToTopButton';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <TopBar />
+      <Navbar />
+      <ImageSlider />
+      <LogoCarousel />
+      <OurObjective />
+      <HowCanWeHelp />
+      <ServiceNow />
+      <OurSpecialities />
+      <InnovateSection />
+      <Testimonial />
+      <OurLatestInsights />
+      <RequestQuoteSection />
+      <ParallaxSection />
+      <Footer />
+      <BackToTopButton />
     </div>
   );
-}
+};
 
 export default App;
